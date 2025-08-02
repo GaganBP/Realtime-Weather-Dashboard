@@ -1,0 +1,55 @@
+name: Update Weather Data
+on:
+  schedule:
+    # Runs every 3 hours (8 times per day) - Perfect for Power BI Pro limits
+    - cron: '0 */3 * * *'  # Every 3 hours: 00:00, 03:00, 06:00, 09:00, 12:00, 15:00, 18:00, 21:00 UTC
+    # UTC to IST conversion: Add 5:30 hours
+    # So this runs at: 5:30 AM, 8:30 AM, 11:30 AM, 2:30 PM, 5:30 PM, 8:30 PM, 11:30 PM, 2:30 AM IST
+  workflow_dispatch:      # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  update-weather:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4  # Updated to v4 (latest)
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'  # Updated to Python 3.11 for better performance
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+        
+    - name: Run weather fetcher
+      run: python weather_fetcher.py
+      env:
+        # Optional: Add environment variables if needed
+        PYTHONPATH: ${{ github.workspace }}
+      
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add weather_data/
+        # Only commit if there are changes
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "🌤️ Weather data update - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+        fi
+
+# Optional: Add a second schedule for peak hours only (uncomment if you want this instead)
+# on:
+#   schedule:
+#     - cron: '30 0 * * *'   # 6:00 AM IST
+#     - cron: '30 3 * * *'   # 9:00 AM IST  
+#     - cron: '30 6 * * *'   # 12:00 PM IST
+#     - cron: '30 9 * * *'   # 3:00 PM IST
+#     - cron: '30 12 * * *'  # 6:00 PM IST
+#     - cron: '30 15 * * *'  # 9:00 PM IST
