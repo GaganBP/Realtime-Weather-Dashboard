@@ -3,7 +3,6 @@
 A fully automated, enterprise-grade weather monitoring dashboard built with Power BI and GitHub Actions, providing real-time weather data and forecasts for multiple Indian cities with advanced air quality monitoring and automated data refresh every 3 hours.
 
 ![Weather Dashboard Preview](images/dashboard-preview.png)
-## 🔗 Live Dashboard
 
 ## 🔗 Live Dashboard
 **[📊 View Live Dashboard](https://app.fabric.microsoft.com/view?r=eyJrIjoiMGY4ZTQwYzYtYzVkYy00YWU3LWFhOWMtZWI0OTc3MTU4NWRlIiwidCI6IjY3OWY5YTYyLTIwODQtNGI0Yy1iNzk2LWI1NGFkZTM5ZmUxYiJ9)** - Access the real-time weather dashboard
