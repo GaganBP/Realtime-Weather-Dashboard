@@ -11,6 +11,7 @@ import subprocess
 # =============================================================================
 # This script fetches 14-day weather forecasts with AQI for all 9 cities
 # and saves them as separate JSON files for Power BI dashboard integration
+# UPDATED: Handles "No moonrise/moonset" cases gracefully
 # =============================================================================
 
 # Configuration
@@ -31,9 +32,6 @@ CITIES = [
 ]
 
 # Directory to save weather data files
-# For Power BI Service, use OneDrive/SharePoint path:
-# SAVE_DIR = r"C:\Users\YourName\OneDrive\PowerBI\weather_data"
-# Or for local testing:
 SAVE_DIR = "weather_data"
 
 def setup_directory():
@@ -43,6 +41,59 @@ def setup_directory():
         print(f"📁 Created directory: {SAVE_DIR}")
     else:
         print(f"📁 Using existing directory: {SAVE_DIR}")
+
+def clean_astronomical_data(astro_data):
+    """
+    Clean astronomical data to handle 'No moonrise' and 'No moonset' cases
+    
+    Args:
+        astro_data (dict): Astronomical data from API
+    
+    Returns:
+        dict: Cleaned astronomical data with null values for missing times
+    """
+    cleaned_astro = {}
+    
+    # List of time fields that might have "No [field]" values
+    time_fields = ['moonrise', 'moonset', 'sunrise', 'sunset']
+    
+    for field in time_fields:
+        value = astro_data.get(field, '')
+        
+        # Check if the value indicates no data
+        if (not value or 
+            value.lower().startswith('no ') or 
+            value.lower() in ['no moonrise', 'no moonset', 'no sunrise', 'no sunset', 'null', 'none']):
+            cleaned_astro[field] = None  # Set to null for Power BI
+        else:
+            cleaned_astro[field] = value  # Keep the original time string
+    
+    # Copy other astronomical fields as-is
+    for key, value in astro_data.items():
+        if key not in time_fields:
+            cleaned_astro[key] = value
+    
+    return cleaned_astro
+
+def process_weather_data(raw_data):
+    """
+    Process raw weather data to handle problematic fields
+    
+    Args:
+        raw_data (dict): Raw weather data from API
+    
+    Returns:
+        dict: Processed weather data safe for Power BI
+    """
+    processed_data = raw_data.copy()
+    
+    # Process forecast days to clean astronomical data
+    if 'forecast' in processed_data and 'forecastday' in processed_data['forecast']:
+        for day in processed_data['forecast']['forecastday']:
+            if 'astro' in day:
+                day['astro'] = clean_astronomical_data(day['astro'])
+    
+    return processed_data
 
 def fetch_weather_for_city(city_name, city_number):
     """
@@ -77,12 +128,25 @@ def fetch_weather_for_city(city_name, city_number):
         response.raise_for_status()  # Raise an exception for bad status codes
         
         # Parse JSON to validate it's correct
-        weather_data = response.json()
+        raw_weather_data = response.json()
         
         # Verify the response has expected structure
-        if 'location' not in weather_data or 'current' not in weather_data or 'forecast' not in weather_data:
+        if 'location' not in raw_weather_data or 'current' not in raw_weather_data or 'forecast' not in raw_weather_data:
             print(f"❌ Invalid API response structure for {city_name}")
             return False
+        
+        # Process the data to handle problematic fields
+        weather_data = process_weather_data(raw_weather_data)
+        
+        # Check for and log any cleaned astronomical data
+        forecast_days = weather_data['forecast']['forecastday']
+        cleaned_days = 0
+        for day in forecast_days:
+            if day['astro'].get('moonrise') is None or day['astro'].get('moonset') is None:
+                cleaned_days += 1
+        
+        if cleaned_days > 0:
+            print(f"🌙 Cleaned {cleaned_days} days with missing moon data for {city_name}")
         
         # Get today's date for filename
         today = datetime.date.today().isoformat()
@@ -93,19 +157,19 @@ def fetch_weather_for_city(city_name, city_number):
         filename = f"{safe_city_name}_latest.json"  # Always "latest" - overwrites daily
         filepath = os.path.join(SAVE_DIR, filename)
         
-        # Save the JSON response with proper formatting
+        # Save the processed JSON response with proper formatting
         with open(filepath, 'w', encoding='utf-8') as file:
             json.dump(weather_data, file, indent=2, ensure_ascii=False)
         
         # Get some basic info for confirmation
         location_name = weather_data['location']['name']
         current_temp = weather_data['current']['temp_c']
-        forecast_days = len(weather_data['forecast']['forecastday'])
+        forecast_days_count = len(weather_data['forecast']['forecastday'])
         
         print(f"✅ SUCCESS: {city_name}")
         print(f"   📍 Location: {location_name}")
         print(f"   🌡️  Current Temp: {current_temp}°C")
-        print(f"   📅 Forecast Days: {forecast_days}")
+        print(f"   📅 Forecast Days: {forecast_days_count}")
         print(f"   💾 Saved as: {filename}")
         
         return True
@@ -160,19 +224,16 @@ def upload_to_github():
 def main():
     """Main function to execute the weather data fetching process"""
     
-    # Header
-    
-    # Optional: Upload to GitHub (uncomment if you want this)
-    # upload_to_github()
-    
     print("=" * 80)
     print("🌤️  WEATHER DATA FETCHER FOR POWER BI DASHBOARD")
+    print("🌙 UPDATED: Handles 'No moonrise/moonset' cases gracefully")
     print("=" * 80)
     print(f"📅 Date: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"🏙️  Total Cities: {len(CITIES)}")
     print(f"🔑 API Key: {API_KEY}")
     print(f"📊 Forecast Days: 14")
     print(f"🌬️  AQI Included: Yes")
+    print(f"🛡️  Moon Data: Safe handling enabled")
     print("=" * 80)
     
     # Setup directory
@@ -220,6 +281,7 @@ def main():
     else:
         print(f"\n🎉 ALL CITIES PROCESSED SUCCESSFULLY!")
         print(f"🔄 Your Power BI dashboard can now refresh with the latest data")
+        print(f"🌙 Moon data issues automatically resolved")
     
     print("=" * 80)
     
