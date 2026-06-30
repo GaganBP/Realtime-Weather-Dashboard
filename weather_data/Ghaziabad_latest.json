@@ -6,54 +6,54 @@
     "lat": 28.6667,
     "lon": 77.4333,
     "tz_id": "Asia/Kolkata",
-    "localtime_epoch": 1782819583,
-    "localtime": "2026-06-30 17:09"
+    "localtime_epoch": 1782828030,
+    "localtime": "2026-06-30 19:30"
   },
   "current": {
-    "last_updated_epoch": 1782818100,
-    "last_updated": "2026-06-30 16:45",
-    "temp_c": 40.4,
-    "temp_f": 104.7,
+    "last_updated_epoch": 1782827100,
+    "last_updated": "2026-06-30 19:15",
+    "temp_c": 42.2,
+    "temp_f": 107.9,
     "is_day": 1,
     "condition": {
-      "text": "Light rain",
-      "icon": "//cdn.weatherapi.com/weather/64x64/day/296.png",
-      "code": 1183
+      "text": "Haze",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/125.png",
+      "code": 1012
     },
-    "wind_mph": 16.1,
-    "wind_kph": 25.9,
-    "wind_degree": 273,
-    "wind_dir": "W",
-    "pressure_mb": 998.0,
-    "pressure_in": 29.47,
-    "precip_mm": 0.02,
+    "wind_mph": 14.8,
+    "wind_kph": 23.8,
+    "wind_degree": 281,
+    "wind_dir": "WNW",
+    "pressure_mb": 994.0,
+    "pressure_in": 29.35,
+    "precip_mm": 0.0,
     "precip_in": 0.0,
-    "humidity": 34,
-    "cloud": 75,
-    "feelslike_c": 40.5,
-    "feelslike_f": 104.9,
-    "windchill_c": 44.6,
-    "windchill_f": 112.3,
-    "heatindex_c": 47.3,
-    "heatindex_f": 117.2,
-    "dewpoint_c": 16.2,
-    "dewpoint_f": 61.1,
-    "vis_km": 5.0,
-    "vis_miles": 3.0,
-    "uv": 1.0,
-    "gust_mph": 18.5,
-    "gust_kph": 29.8,
+    "humidity": 21,
+    "cloud": 15,
+    "feelslike_c": 33.6,
+    "feelslike_f": 92.5,
+    "windchill_c": 42.2,
+    "windchill_f": 107.9,
+    "heatindex_c": 43.9,
+    "heatindex_f": 111.1,
+    "dewpoint_c": 15.7,
+    "dewpoint_f": 60.2,
+    "vis_km": 3.3,
+    "vis_miles": 2.0,
+    "uv": 0.0,
+    "gust_mph": 20.3,
+    "gust_kph": 32.7,
     "will_it_rain": 0,
-    "chance_of_rain": 8,
+    "chance_of_rain": 1,
     "will_it_snow": 0,
     "chance_of_snow": 0,
     "air_quality": {
-      "co": 199.0,
-      "no2": 6.0,
-      "o3": 221.0,
-      "so2": 22.1,
-      "pm2_5": 149.9,
-      "pm10": 715.3,
+      "co": 536.0,
+      "no2": 21.0,
+      "o3": 144.0,
+      "so2": 18.7,
+      "pm2_5": 125.7,
+      "pm10": 361.4,
       "us-epa-index": 4,
       "gb-defra-index": 10
     }
@@ -97,7 +97,7 @@
           "moon_phase": "Full Moon",
           "moon_illumination": 98,
           "is_moon_up": 0,
-          "is_sun_up": 1
+          "is_sun_up": 0
         },
         "hour": [
           {
@@ -743,27 +743,27 @@
           {
             "time_epoch": 1782815400,
             "time": "2026-06-30 16:00",
-            "temp_c": 40.4,
-            "temp_f": 104.7,
+            "temp_c": 44.6,
+            "temp_f": 112.3,
             "is_day": 1,
             "condition": {
-              "text": "Light rain",
-              "icon": "//cdn.weatherapi.com/weather/64x64/day/296.png",
-              "code": 1183
+              "text": "Patchy rain nearby",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+              "code": 1063
             },
             "wind_mph": 16.1,
             "wind_kph": 25.9,
             "wind_degree": 273,
             "wind_dir": "W",
-            "pressure_mb": 998.0,
-            "pressure_in": 29.47,
+            "pressure_mb": 993.0,
+            "pressure_in": 29.33,
             "precip_mm": 0.02,
             "precip_in": 0.0,
             "snow_cm": 0.0,
-            "humidity": 34,
-            "cloud": 75,
-            "feelslike_c": 40.5,
-            "feelslike_f": 104.9,
+            "humidity": 20,
+            "cloud": 87,
+            "feelslike_c": 35.6,
+            "feelslike_f": 96.1,
             "windchill_c": 44.6,
             "windchill_f": 112.3,
             "heatindex_c": 47.3,
@@ -774,8 +774,8 @@
             "chance_of_rain": 8,
             "will_it_snow": 0,
             "chance_of_snow": 0,
-            "vis_km": 5.0,
-            "vis_miles": 3.0,
+            "vis_km": 10.0,
+            "vis_miles": 6.0,
             "gust_mph": 18.5,
             "gust_kph": 29.8,
             "uv": 1.0
@@ -865,10 +865,10 @@
             "time": "2026-06-30 19:00",
             "temp_c": 42.2,
             "temp_f": 107.9,
-            "is_day": 0,
+            "is_day": 1,
             "condition": {
               "text": "Haze",
-              "icon": "//cdn.weatherapi.com/weather/64x64/night/125.png",
+              "icon": "//cdn.weatherapi.com/weather/64x64/day/125.png",
               "code": 1012
             },
             "wind_mph": 14.8,
@@ -898,7 +898,7 @@
             "vis_miles": 2.0,
             "gust_mph": 20.3,
             "gust_kph": 32.7,
-            "uv": 0
+            "uv": 0.0
           },
           {
             "time_epoch": 1782829800,
@@ -1099,7 +1099,7 @@
           "moon_phase": "Waning Gibbous",
           "moon_illumination": 93,
           "is_moon_up": 0,
-          "is_sun_up": 1
+          "is_sun_up": 0
         },
         "hour": [
           {
@@ -2101,7 +2101,7 @@
           "moon_phase": "Waning Gibbous",
           "moon_illumination": 87,
           "is_moon_up": 0,
-          "is_sun_up": 1
+          "is_sun_up": 0
         },
         "hour": [
           {
