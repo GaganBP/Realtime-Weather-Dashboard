@@ -6,56 +6,56 @@
     "lat": 28.6667,
     "lon": 77.4333,
     "tz_id": "Asia/Kolkata",
-    "localtime_epoch": 1783201848,
-    "localtime": "2026-07-05 03:20"
+    "localtime_epoch": 1783218126,
+    "localtime": "2026-07-05 07:52"
   },
   "current": {
-    "last_updated_epoch": 1783200600,
-    "last_updated": "2026-07-05 03:00",
-    "temp_c": 31.2,
-    "temp_f": 88.2,
-    "is_day": 0,
+    "last_updated_epoch": 1783216800,
+    "last_updated": "2026-07-05 07:30",
+    "temp_c": 35.1,
+    "temp_f": 95.2,
+    "is_day": 1,
     "condition": {
-      "text": "Mist",
-      "icon": "//cdn.weatherapi.com/weather/64x64/night/143.png",
-      "code": 1030
+      "text": "Smoky haze",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/149.png",
+      "code": 1036
     },
-    "wind_mph": 4.7,
-    "wind_kph": 7.6,
-    "wind_degree": 87,
+    "wind_mph": 7.2,
+    "wind_kph": 11.5,
+    "wind_degree": 82,
     "wind_dir": "E",
     "pressure_mb": 998.0,
-    "pressure_in": 29.47,
-    "precip_mm": 0.02,
+    "pressure_in": 29.46,
+    "precip_mm": 0.0,
     "precip_in": 0.0,
-    "humidity": 75,
-    "cloud": 50,
-    "feelslike_c": 33.1,
-    "feelslike_f": 91.5,
-    "windchill_c": 33.8,
-    "windchill_f": 92.9,
-    "heatindex_c": 38.0,
-    "heatindex_f": 100.3,
-    "dewpoint_c": 21.3,
-    "dewpoint_f": 70.3,
-    "vis_km": 3.0,
-    "vis_miles": 1.0,
-    "uv": 0.0,
-    "gust_mph": 7.2,
-    "gust_kph": 11.7,
+    "humidity": 46,
+    "cloud": 21,
+    "feelslike_c": 39.3,
+    "feelslike_f": 102.7,
+    "windchill_c": 35.1,
+    "windchill_f": 95.2,
+    "heatindex_c": 40.0,
+    "heatindex_f": 103.9,
+    "dewpoint_c": 21.6,
+    "dewpoint_f": 70.9,
+    "vis_km": 10.0,
+    "vis_miles": 6.0,
+    "uv": 0.4,
+    "gust_mph": 8.2,
+    "gust_kph": 13.2,
     "will_it_rain": 0,
-    "chance_of_rain": 9,
+    "chance_of_rain": 2,
     "will_it_snow": 0,
     "chance_of_snow": 0,
     "air_quality": {
-      "co": 417.0,
-      "no2": 30.5,
-      "o3": 53.0,
-      "so2": 8.9,
-      "pm2_5": 56.5,
-      "pm10": 57.0,
+      "co": 436.0,
+      "no2": 12.9,
+      "o3": 94.0,
+      "so2": 10.0,
+      "pm2_5": 43.8,
+      "pm10": 44.5,
       "us-epa-index": 3,
-      "gb-defra-index": 7
+      "gb-defra-index": 5
     }
   },
   "forecast": {
@@ -97,7 +97,7 @@
           "moon_phase": "Last Quarter",
           "moon_illumination": 60,
           "is_moon_up": 1,
-          "is_sun_up": 0
+          "is_sun_up": 1
         },
         "hour": [
           {
@@ -223,27 +223,27 @@
           {
             "time_epoch": 1783200600,
             "time": "2026-07-05 03:00",
-            "temp_c": 31.2,
-            "temp_f": 88.2,
+            "temp_c": 33.8,
+            "temp_f": 92.9,
             "is_day": 0,
             "condition": {
-              "text": "Mist",
-              "icon": "//cdn.weatherapi.com/weather/64x64/night/143.png",
-              "code": 1030
+              "text": "Patchy rain nearby",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png",
+              "code": 1063
             },
             "wind_mph": 4.7,
             "wind_kph": 7.6,
             "wind_degree": 87,
             "wind_dir": "E",
-            "pressure_mb": 998.0,
-            "pressure_in": 29.47,
+            "pressure_mb": 996.0,
+            "pressure_in": 29.42,
             "precip_mm": 0.02,
             "precip_in": 0.0,
             "snow_cm": 0.0,
-            "humidity": 75,
-            "cloud": 50,
-            "feelslike_c": 33.1,
-            "feelslike_f": 91.5,
+            "humidity": 48,
+            "cloud": 78,
+            "feelslike_c": 37.3,
+            "feelslike_f": 99.1,
             "windchill_c": 33.8,
             "windchill_f": 92.9,
             "heatindex_c": 38.0,
@@ -254,8 +254,8 @@
             "chance_of_rain": 9,
             "will_it_snow": 0,
             "chance_of_snow": 0,
-            "vis_km": 3.0,
-            "vis_miles": 1.0,
+            "vis_km": 10.0,
+            "vis_miles": 6.0,
             "gust_mph": 7.2,
             "gust_kph": 11.7,
             "uv": 0
@@ -1099,7 +1099,7 @@
           "moon_phase": "Last Quarter",
           "moon_illumination": 49,
           "is_moon_up": 1,
-          "is_sun_up": 0
+          "is_sun_up": 1
         },
         "hour": [
           {
@@ -2101,7 +2101,7 @@
           "moon_phase": "Last Quarter",
           "moon_illumination": 39,
           "is_moon_up": 1,
-          "is_sun_up": 0
+          "is_sun_up": 1
         },
         "hour": [
           {
