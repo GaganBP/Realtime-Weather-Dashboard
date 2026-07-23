@@ -6,54 +6,54 @@
     "lat": 12.3072,
     "lon": 76.6497,
     "tz_id": "Asia/Kolkata",
-    "localtime_epoch": 1784804498,
-    "localtime": "2026-07-23 16:31"
+    "localtime_epoch": 1784813269,
+    "localtime": "2026-07-23 18:57"
   },
   "current": {
-    "last_updated_epoch": 1784803500,
-    "last_updated": "2026-07-23 16:15",
-    "temp_c": 29.7,
-    "temp_f": 85.5,
-    "is_day": 1,
+    "last_updated_epoch": 1784812500,
+    "last_updated": "2026-07-23 18:45",
+    "temp_c": 26.5,
+    "temp_f": 79.7,
+    "is_day": 0,
     "condition": {
       "text": "Sunny",
-      "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+      "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
       "code": 1000
     },
-    "wind_mph": 17.2,
-    "wind_kph": 27.7,
-    "wind_degree": 256,
+    "wind_mph": 14.5,
+    "wind_kph": 23.4,
+    "wind_degree": 258,
     "wind_dir": "WSW",
-    "pressure_mb": 1009.0,
-    "pressure_in": 29.79,
+    "pressure_mb": 1010.0,
+    "pressure_in": 29.83,
     "precip_mm": 0.0,
     "precip_in": 0.0,
-    "humidity": 39,
-    "cloud": 13,
-    "feelslike_c": 20.3,
-    "feelslike_f": 68.5,
-    "windchill_c": 29.7,
-    "windchill_f": 85.5,
-    "heatindex_c": 29.7,
-    "heatindex_f": 85.4,
-    "dewpoint_c": 14.4,
-    "dewpoint_f": 57.9,
+    "humidity": 52,
+    "cloud": 21,
+    "feelslike_c": 24.8,
+    "feelslike_f": 76.6,
+    "windchill_c": 26.5,
+    "windchill_f": 79.7,
+    "heatindex_c": 27.2,
+    "heatindex_f": 81.0,
+    "dewpoint_c": 15.8,
+    "dewpoint_f": 60.5,
     "vis_km": 10.0,
     "vis_miles": 6.0,
-    "uv": 2.1,
-    "gust_mph": 19.8,
-    "gust_kph": 31.9,
+    "uv": 0.0,
+    "gust_mph": 19.4,
+    "gust_kph": 31.2,
     "will_it_rain": 0,
-    "chance_of_rain": 1,
+    "chance_of_rain": 3,
     "will_it_snow": 0,
     "chance_of_snow": 0,
     "air_quality": {
-      "co": 136.0,
-      "no2": 2.9,
-      "o3": 61.0,
-      "so2": 1.4,
-      "pm2_5": 4.6,
-      "pm10": 8.3,
+      "co": 149.0,
+      "no2": 5.5,
+      "o3": 53.0,
+      "so2": 1.7,
+      "pm2_5": 5.4,
+      "pm10": 8.1,
       "us-epa-index": 1,
       "gb-defra-index": 1
     }
@@ -97,7 +97,7 @@
           "moon_phase": "Waxing Gibbous",
           "moon_illumination": 74,
           "is_moon_up": 1,
-          "is_sun_up": 1
+          "is_sun_up": 0
         },
         "hour": [
           {
@@ -825,10 +825,10 @@
             "time": "2026-07-23 18:00",
             "temp_c": 26.5,
             "temp_f": 79.7,
-            "is_day": 1,
+            "is_day": 0,
             "condition": {
               "text": "Sunny",
-              "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
               "code": 1000
             },
             "wind_mph": 14.5,
@@ -858,7 +858,7 @@
             "vis_miles": 6.0,
             "gust_mph": 19.4,
             "gust_kph": 31.2,
-            "uv": 0.0
+            "uv": 0
           },
           {
             "time_epoch": 1784813400,
@@ -1099,7 +1099,7 @@
           "moon_phase": "Waxing Gibbous",
           "moon_illumination": 82,
           "is_moon_up": 1,
-          "is_sun_up": 1
+          "is_sun_up": 0
         },
         "hour": [
           {
@@ -2101,7 +2101,7 @@
           "moon_phase": "Waxing Gibbous",
           "moon_illumination": 90,
           "is_moon_up": 1,
-          "is_sun_up": 1
+          "is_sun_up": 0
         },
         "hour": [
           {
