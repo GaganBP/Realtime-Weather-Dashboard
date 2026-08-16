@@ -6,56 +6,56 @@
     "lat": 12.3072,
     "lon": 76.6497,
     "tz_id": "Asia/Kolkata",
-    "localtime_epoch": 1786882883,
-    "localtime": "2026-08-16 17:51"
+    "localtime_epoch": 1786893176,
+    "localtime": "2026-08-16 20:42"
   },
   "current": {
-    "last_updated_epoch": 1786882500,
-    "last_updated": "2026-08-16 17:45",
-    "temp_c": 26.9,
-    "temp_f": 80.5,
-    "is_day": 1,
+    "last_updated_epoch": 1786892400,
+    "last_updated": "2026-08-16 20:30",
+    "temp_c": 22.4,
+    "temp_f": 72.3,
+    "is_day": 0,
     "condition": {
-      "text": "Partly Cloudy",
-      "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
-      "code": 1003
+      "text": "Clear",
+      "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+      "code": 1000
     },
-    "wind_mph": 15.7,
-    "wind_kph": 25.2,
-    "wind_degree": 252,
+    "wind_mph": 11.4,
+    "wind_kph": 18.4,
+    "wind_degree": 256,
     "wind_dir": "WSW",
-    "pressure_mb": 1011.0,
-    "pressure_in": 29.84,
+    "pressure_mb": 1013.0,
+    "pressure_in": 29.92,
     "precip_mm": 0.0,
     "precip_in": 0.0,
-    "humidity": 51,
-    "cloud": 31,
-    "feelslike_c": 27.3,
-    "feelslike_f": 81.1,
-    "windchill_c": 26.9,
-    "windchill_f": 80.5,
-    "heatindex_c": 27.6,
-    "heatindex_f": 81.7,
-    "dewpoint_c": 15.9,
-    "dewpoint_f": 60.6,
+    "humidity": 74,
+    "cloud": 10,
+    "feelslike_c": 21.4,
+    "feelslike_f": 70.5,
+    "windchill_c": 22.4,
+    "windchill_f": 72.3,
+    "heatindex_c": 24.7,
+    "heatindex_f": 76.5,
+    "dewpoint_c": 17.5,
+    "dewpoint_f": 63.5,
     "vis_km": 10.0,
     "vis_miles": 6.0,
-    "uv": 0.5,
-    "gust_mph": 19.7,
-    "gust_kph": 31.7,
+    "uv": 0.0,
+    "gust_mph": 16.6,
+    "gust_kph": 26.7,
     "will_it_rain": 0,
-    "chance_of_rain": 4,
+    "chance_of_rain": 7,
     "will_it_snow": 0,
     "chance_of_snow": 0,
-    "wetbulb_c": 19.7,
-    "wetbulb_f": 67.4,
+    "wetbulb_c": 19.1,
+    "wetbulb_f": 66.4,
     "air_quality": {
-      "co": 125.0,
-      "no2": 3.1,
-      "o3": 59.0,
-      "so2": 1.5,
-      "pm2_5": 7.3,
-      "pm10": 13.6,
+      "co": 127.0,
+      "no2": 5.4,
+      "o3": 45.0,
+      "so2": 2.0,
+      "pm2_5": 5.3,
+      "pm10": 7.9,
       "us-epa-index": 1,
       "gb-defra-index": 1
     }
@@ -103,7 +103,7 @@
           "moon_phase": "Waxing Crescent",
           "moon_illumination": 18,
           "is_moon_up": 1,
-          "is_sun_up": 1
+          "is_sun_up": 0
         },
         "hour": [
           {
@@ -1157,7 +1157,7 @@
           "moon_phase": "Waxing Crescent",
           "moon_illumination": 27,
           "is_moon_up": 1,
-          "is_sun_up": 1
+          "is_sun_up": 0
         },
         "hour": [
           {
@@ -2211,7 +2211,7 @@
           "moon_phase": "First Quarter",
           "moon_illumination": 37,
           "is_moon_up": 1,
-          "is_sun_up": 1
+          "is_sun_up": 0
         },
         "hour": [
           {
