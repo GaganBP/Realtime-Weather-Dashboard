@@ -6,56 +6,56 @@
     "lat": 13.0006,
     "lon": 76.0994,
     "tz_id": "Asia/Kolkata",
-    "localtime_epoch": 1787606422,
-    "localtime": "2026-08-25 02:50"
+    "localtime_epoch": 1787618821,
+    "localtime": "2026-08-25 06:17"
   },
   "current": {
-    "last_updated_epoch": 1787606100,
-    "last_updated": "2026-08-25 02:45",
-    "temp_c": 19.8,
-    "temp_f": 67.6,
+    "last_updated_epoch": 1787617800,
+    "last_updated": "2026-08-25 06:00",
+    "temp_c": 19.6,
+    "temp_f": 67.3,
     "is_day": 0,
     "condition": {
       "text": "Patchy rain nearby",
       "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png",
       "code": 1063
     },
-    "wind_mph": 11.2,
-    "wind_kph": 18.0,
-    "wind_degree": 249,
+    "wind_mph": 8.5,
+    "wind_kph": 13.7,
+    "wind_degree": 243,
     "wind_dir": "WSW",
-    "pressure_mb": 1012.0,
-    "pressure_in": 29.88,
-    "precip_mm": 0.06,
+    "pressure_mb": 1013.0,
+    "pressure_in": 29.91,
+    "precip_mm": 0.07,
     "precip_in": 0.0,
-    "humidity": 96,
+    "humidity": 97,
     "cloud": 100,
-    "feelslike_c": 19.6,
-    "feelslike_f": 67.3,
-    "windchill_c": 19.8,
-    "windchill_f": 67.6,
-    "heatindex_c": 19.8,
-    "heatindex_f": 67.6,
-    "dewpoint_c": 19.2,
-    "dewpoint_f": 66.6,
+    "feelslike_c": 20.3,
+    "feelslike_f": 68.5,
+    "windchill_c": 19.6,
+    "windchill_f": 67.3,
+    "heatindex_c": 19.6,
+    "heatindex_f": 67.3,
+    "dewpoint_c": 19.1,
+    "dewpoint_f": 66.5,
     "vis_km": 10.0,
     "vis_miles": 6.0,
     "uv": 0.0,
-    "gust_mph": 24.4,
-    "gust_kph": 39.2,
+    "gust_mph": 23.1,
+    "gust_kph": 37.2,
     "will_it_rain": 0,
-    "chance_of_rain": 39,
+    "chance_of_rain": 42,
     "will_it_snow": 0,
     "chance_of_snow": 0,
-    "wetbulb_c": 19.4,
-    "wetbulb_f": 66.9,
+    "wetbulb_c": 19.3,
+    "wetbulb_f": 66.7,
     "air_quality": {
-      "co": 100.0,
-      "no2": 4.5,
-      "o3": 34.0,
+      "co": 101.0,
+      "no2": 3.2,
+      "o3": 35.0,
       "so2": 1.4,
       "pm2_5": 0.7,
-      "pm10": 0.7,
+      "pm10": 1.1,
       "us-epa-index": 1,
       "gb-defra-index": 1
     }
@@ -102,8 +102,8 @@
           "sunset": "06:41 PM",
           "moon_phase": "Full Moon",
           "moon_illumination": 97,
-          "is_moon_up": 1,
-          "is_sun_up": 0
+          "is_moon_up": 0,
+          "is_sun_up": 1
         },
         "hour": [
           {
@@ -363,10 +363,10 @@
             "time": "2026-08-25 06:00",
             "temp_c": 19.6,
             "temp_f": 67.3,
-            "is_day": 1,
+            "is_day": 0,
             "condition": {
               "text": "Patchy rain nearby",
-              "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+              "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png",
               "code": 1063
             },
             "wind_mph": 8.5,
@@ -396,7 +396,7 @@
             "vis_miles": 6.0,
             "gust_mph": 23.1,
             "gust_kph": 37.2,
-            "uv": 0.0,
+            "uv": 0,
             "wetbulb_c": 19.3,
             "wetbulb_f": 66.7
           },
@@ -1156,8 +1156,8 @@
           "sunset": "06:40 PM",
           "moon_phase": "Full Moon",
           "moon_illumination": 100,
-          "is_moon_up": 1,
-          "is_sun_up": 0
+          "is_moon_up": 0,
+          "is_sun_up": 1
         },
         "hour": [
           {
@@ -2210,8 +2210,8 @@
           "sunset": "06:39 PM",
           "moon_phase": "Full Moon",
           "moon_illumination": 100,
-          "is_moon_up": 1,
-          "is_sun_up": 0
+          "is_moon_up": 0,
+          "is_sun_up": 1
         },
         "hour": [
           {
