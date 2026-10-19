@@ -6,56 +6,56 @@
     "lat": 13.0006,
     "lon": 76.0994,
     "tz_id": "Asia/Kolkata",
-    "localtime_epoch": 1792363277,
-    "localtime": "2026-10-19 04:11"
+    "localtime_epoch": 1792377360,
+    "localtime": "2026-10-19 08:06"
   },
   "current": {
-    "last_updated_epoch": 1792362600,
-    "last_updated": "2026-10-19 04:00",
-    "temp_c": 20.6,
-    "temp_f": 69.2,
-    "is_day": 0,
+    "last_updated_epoch": 1792377000,
+    "last_updated": "2026-10-19 08:00",
+    "temp_c": 23.4,
+    "temp_f": 74.1,
+    "is_day": 1,
     "condition": {
       "text": "Patchy rain nearby",
-      "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
       "code": 1063
     },
     "wind_mph": 2.2,
     "wind_kph": 3.6,
-    "wind_degree": 332,
+    "wind_degree": 344,
     "wind_dir": "NNW",
-    "pressure_mb": 1013.0,
-    "pressure_in": 29.92,
-    "precip_mm": 0.06,
-    "precip_in": 0.0,
-    "humidity": 90,
-    "cloud": 82,
-    "feelslike_c": 23.5,
-    "feelslike_f": 74.3,
-    "windchill_c": 20.6,
-    "windchill_f": 69.2,
-    "heatindex_c": 20.6,
-    "heatindex_f": 69.2,
-    "dewpoint_c": 18.9,
-    "dewpoint_f": 66.0,
-    "vis_km": 10.0,
-    "vis_miles": 6.0,
-    "uv": 0.0,
+    "pressure_mb": 1016.0,
+    "pressure_in": 30.01,
+    "precip_mm": 0.98,
+    "precip_in": 0.04,
+    "humidity": 79,
+    "cloud": 86,
+    "feelslike_c": 26.5,
+    "feelslike_f": 79.7,
+    "windchill_c": 23.4,
+    "windchill_f": 74.0,
+    "heatindex_c": 25.3,
+    "heatindex_f": 77.6,
+    "dewpoint_c": 19.4,
+    "dewpoint_f": 67.0,
+    "vis_km": 9.0,
+    "vis_miles": 5.0,
+    "uv": 1.7,
     "gust_mph": 6.7,
     "gust_kph": 10.8,
     "will_it_rain": 0,
-    "chance_of_rain": 31,
+    "chance_of_rain": 62,
     "will_it_snow": 0,
     "chance_of_snow": 0,
-    "wetbulb_c": 19.4,
-    "wetbulb_f": 67.0,
+    "wetbulb_c": 20.7,
+    "wetbulb_f": 69.2,
     "air_quality": {
-      "co": 333.0,
-      "no2": 5.6,
-      "o3": 54.0,
-      "so2": 2.3,
-      "pm2_5": 10.0,
-      "pm10": 10.7,
+      "co": 285.0,
+      "no2": 4.3,
+      "o3": 81.0,
+      "so2": 2.8,
+      "pm2_5": 7.2,
+      "pm10": 7.5,
       "us-epa-index": 1,
       "gb-defra-index": 1
     }
@@ -103,7 +103,7 @@
           "moon_phase": "First Quarter",
           "moon_illumination": 68,
           "is_moon_up": 0,
-          "is_sun_up": 0
+          "is_sun_up": 1
         },
         "hour": [
           {
@@ -285,8 +285,8 @@
               "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png",
               "code": 1063
             },
-            "wind_mph": 2.2,
-            "wind_kph": 3.6,
+            "wind_mph": 1.1,
+            "wind_kph": 1.8,
             "wind_degree": 332,
             "wind_dir": "NNW",
             "pressure_mb": 1013.0,
@@ -310,8 +310,8 @@
             "chance_of_snow": 0,
             "vis_km": 10.0,
             "vis_miles": 6.0,
-            "gust_mph": 6.7,
-            "gust_kph": 10.8,
+            "gust_mph": 1.4,
+            "gust_kph": 2.2,
             "uv": 0,
             "wetbulb_c": 19.4,
             "wetbulb_f": 67.0
@@ -453,8 +453,8 @@
               "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
               "code": 1063
             },
-            "wind_mph": 0.9,
-            "wind_kph": 1.4,
+            "wind_mph": 2.2,
+            "wind_kph": 3.6,
             "wind_degree": 344,
             "wind_dir": "NNW",
             "pressure_mb": 1016.0,
@@ -478,8 +478,8 @@
             "chance_of_snow": 0,
             "vis_km": 9.0,
             "vis_miles": 5.0,
-            "gust_mph": 0.9,
-            "gust_kph": 1.5,
+            "gust_mph": 6.7,
+            "gust_kph": 10.8,
             "uv": 1.7,
             "wetbulb_c": 20.7,
             "wetbulb_f": 69.2
@@ -1157,7 +1157,7 @@
           "moon_phase": "Waxing Gibbous",
           "moon_illumination": 77,
           "is_moon_up": 0,
-          "is_sun_up": 0
+          "is_sun_up": 1
         },
         "hour": [
           {
@@ -2211,7 +2211,7 @@
           "moon_phase": "Waxing Gibbous",
           "moon_illumination": 86,
           "is_moon_up": 0,
-          "is_sun_up": 0
+          "is_sun_up": 1
         },
         "hour": [
           {
