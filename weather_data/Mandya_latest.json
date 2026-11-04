@@ -6,58 +6,58 @@
     "lat": 12.5242,
     "lon": 76.8958,
     "tz_id": "Asia/Kolkata",
-    "localtime_epoch": 1793738568,
-    "localtime": "2026-11-04 02:12"
+    "localtime_epoch": 1793753916,
+    "localtime": "2026-11-04 06:28"
   },
   "current": {
-    "last_updated_epoch": 1793737800,
-    "last_updated": "2026-11-04 02:00",
-    "temp_c": 21.4,
-    "temp_f": 70.6,
-    "is_day": 0,
+    "last_updated_epoch": 1793753100,
+    "last_updated": "2026-11-04 06:15",
+    "temp_c": 22.1,
+    "temp_f": 71.7,
+    "is_day": 1,
     "condition": {
-      "text": "Light drizzle",
-      "icon": "//cdn.weatherapi.com/weather/64x64/night/266.png",
-      "code": 1153
+      "text": "Overcast",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+      "code": 1009
     },
     "wind_mph": 2.2,
     "wind_kph": 3.6,
-    "wind_degree": 44,
+    "wind_degree": 49,
     "wind_dir": "NE",
     "pressure_mb": 1014.0,
-    "pressure_in": 29.93,
-    "precip_mm": 0.62,
-    "precip_in": 0.02,
-    "humidity": 93,
-    "cloud": 99,
-    "feelslike_c": 25.0,
-    "feelslike_f": 77.0,
-    "windchill_c": 21.4,
-    "windchill_f": 70.6,
-    "heatindex_c": 24.3,
-    "heatindex_f": 75.7,
-    "dewpoint_c": 20.3,
-    "dewpoint_f": 68.5,
-    "vis_km": 2.0,
-    "vis_miles": 1.0,
+    "pressure_in": 29.95,
+    "precip_mm": 0.0,
+    "precip_in": 0.0,
+    "humidity": 86,
+    "cloud": 97,
+    "feelslike_c": 25.3,
+    "feelslike_f": 77.5,
+    "windchill_c": 22.1,
+    "windchill_f": 71.7,
+    "heatindex_c": 24.5,
+    "heatindex_f": 76.2,
+    "dewpoint_c": 19.6,
+    "dewpoint_f": 67.3,
+    "vis_km": 10.0,
+    "vis_miles": 6.0,
     "uv": 0.0,
-    "gust_mph": 2.2,
-    "gust_kph": 3.6,
-    "will_it_rain": 1,
-    "chance_of_rain": 71,
+    "gust_mph": 6.7,
+    "gust_kph": 10.8,
+    "will_it_rain": 0,
+    "chance_of_rain": 26,
     "will_it_snow": 0,
     "chance_of_snow": 0,
-    "wetbulb_c": 20.6,
-    "wetbulb_f": 69.1,
+    "wetbulb_c": 20.4,
+    "wetbulb_f": 68.7,
     "air_quality": {
-      "co": 381.0,
-      "no2": 8.5,
-      "o3": 52.0,
-      "so2": 2.5,
-      "pm2_5": 8.2,
-      "pm10": 8.4,
+      "co": 337.0,
+      "no2": 9.9,
+      "o3": 45.0,
+      "so2": 2.9,
+      "pm2_5": 12.6,
+      "pm10": 12.7,
       "us-epa-index": 1,
-      "gb-defra-index": 1
+      "gb-defra-index": 2
     }
   },
   "forecast": {
@@ -103,7 +103,7 @@
           "moon_phase": "Waning Crescent",
           "moon_illumination": 20,
           "is_moon_up": 1,
-          "is_sun_up": 0
+          "is_sun_up": 1
         },
         "hour": [
           {
@@ -201,8 +201,8 @@
               "icon": "//cdn.weatherapi.com/weather/64x64/night/266.png",
               "code": 1153
             },
-            "wind_mph": 2.2,
-            "wind_kph": 3.6,
+            "wind_mph": 1.1,
+            "wind_kph": 1.8,
             "wind_degree": 44,
             "wind_dir": "NE",
             "pressure_mb": 1014.0,
@@ -369,8 +369,8 @@
               "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
               "code": 1009
             },
-            "wind_mph": 0.9,
-            "wind_kph": 1.4,
+            "wind_mph": 2.2,
+            "wind_kph": 3.6,
             "wind_degree": 49,
             "wind_dir": "NE",
             "pressure_mb": 1014.0,
@@ -394,8 +394,8 @@
             "chance_of_snow": 0,
             "vis_km": 10.0,
             "vis_miles": 6.0,
-            "gust_mph": 1.1,
-            "gust_kph": 1.8,
+            "gust_mph": 6.7,
+            "gust_kph": 10.8,
             "uv": 0.0,
             "wetbulb_c": 20.4,
             "wetbulb_f": 68.7
@@ -1156,8 +1156,8 @@
           "sunset": "05:55 PM",
           "moon_phase": "Waning Crescent",
           "moon_illumination": 13,
-          "is_moon_up": 0,
-          "is_sun_up": 0
+          "is_moon_up": 1,
+          "is_sun_up": 1
         },
         "hour": [
           {
@@ -2210,8 +2210,8 @@
           "sunset": "05:54 PM",
           "moon_phase": "Waning Crescent",
           "moon_illumination": 6,
-          "is_moon_up": 0,
-          "is_sun_up": 0
+          "is_moon_up": 1,
+          "is_sun_up": 1
         },
         "hour": [
           {
